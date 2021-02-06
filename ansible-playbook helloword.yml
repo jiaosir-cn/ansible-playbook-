@@ -1,0 +1,8 @@
+---
+- name: jiaosir
+  hosts: localhost
+  tasks:
+    - name: copyfile.
+      copy:
+        content: hello world \r\n
+        dest: /tmp/hello.txt
