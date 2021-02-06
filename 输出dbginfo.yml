@@ -1,0 +1,9 @@
+---
+- hosts: localhost
+  vars:
+  #httpd_port=任意类型''字串 80数字
+    httpd_port: 'hello'
+
+  tasks:
+  - debug:
+      msg: "http_port: {{httpd_port}}"
